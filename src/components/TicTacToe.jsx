@@ -77,7 +77,7 @@ function TicTacToe() {
 	const [playerTurn, setPlayerTurn] = useState(PLAYER_X);
 	const [strikeClass, setStrikeClass] = useState();
 	const [gameState, setGameState] = useState(GameState.inProgress);
-	const [userName, setUserName] = useState("anonymous");
+	const [userName, setUserName] = useState("");
 
 	// State to store the value of the input
 	const [inputValue, setInputValue] = useState("");
@@ -89,6 +89,9 @@ function TicTacToe() {
 	};
 
 	const handleTileClick = (index) => {
+		if (userName === "") {
+			return;
+		}
 		if (gameState !== GameState.inProgress) {
 			return;
 		}

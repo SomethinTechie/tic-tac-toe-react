@@ -1,7 +1,6 @@
-import Strike from "./Strike";
 import Tile from "./Tile";
 
-function Board({ tiles, onTileClick, playerTurn, strikeClass }) {
+function Board({ tiles, onTileClick, playerTurn }) {
   return (
     <div className="board">
       <Tile
