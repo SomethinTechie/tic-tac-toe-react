@@ -19,18 +19,18 @@ const PLAYER_O = "O";
 
 const winningCombinations = [
 	//Rows
-	{ combo: [0, 1, 2], strikeClass: "strike-row-1" },
-	{ combo: [3, 4, 5], strikeClass: "strike-row-2" },
-	{ combo: [6, 7, 8], strikeClass: "strike-row-3" },
+	{ combo: [0, 1, 2] },
+	{ combo: [3, 4, 5] },
+	{ combo: [6, 7, 8] },
 
 	//Columns
-	{ combo: [0, 3, 6], strikeClass: "strike-column-1" },
-	{ combo: [1, 4, 7], strikeClass: "strike-column-2" },
-	{ combo: [2, 5, 8], strikeClass: "strike-column-3" },
+	{ combo: [0, 3, 6] },
+	{ combo: [1, 4, 7] },
+	{ combo: [2, 5, 8] },
 
 	//Diagonals
-	{ combo: [0, 4, 8], strikeClass: "strike-diagonal-1" },
-	{ combo: [2, 4, 6], strikeClass: "strike-diagonal-2" },
+	{ combo: [0, 4, 8] },
+	{ combo: [2, 4, 6] },
 ];
 
 function checkWinner(tiles, setStrikeClass, setGameState, userName) {
@@ -77,7 +77,7 @@ function TicTacToe() {
 	const [playerTurn, setPlayerTurn] = useState(PLAYER_X);
 	const [strikeClass, setStrikeClass] = useState();
 	const [gameState, setGameState] = useState(GameState.inProgress);
-	const [userName, setUserName] = useState("");
+	const [userName, setUserName] = useState("anonymous");
 
 	// State to store the value of the input
 	const [inputValue, setInputValue] = useState("");
