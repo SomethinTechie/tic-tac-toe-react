@@ -19,10 +19,12 @@ function ScoreBoard({ className, gameState }) {
 			});
 	}, [gameState]);
 
+	console.log(users)
+
 	return (
 		<div className={"user-board"}>
 			<h1>Score board</h1>
-			{users ? <UserList users={users} /> : <p className={'op6'}>No top score records yet.</p>}
+			{users.length > 0 ? <UserList users={users} /> : <p className={'op6'}>No top score records yet.</p>}
 		</div>
 	);
 }

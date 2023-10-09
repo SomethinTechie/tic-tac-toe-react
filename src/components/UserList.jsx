@@ -6,7 +6,7 @@ const UserList = ({users}) => {
 		<ol>
 			{users.map((user) => (
 				<li key={user.id} className="user op6">
-					{user.name} - {user.email}
+					{user.name} <span>0</span>
 				</li>
 			))}
 		</ol>

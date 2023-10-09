@@ -55,7 +55,7 @@ function checkWinner(tiles, setStrikeClass, setGameState, userName) {
 			console.log(userName)
 
 			axios
-				.post(apiUrl, { name: 'userName', score: "20" })
+				.post(apiUrl, { name: userName, score: "20" })
 				.then((response) => {})
 				.catch((error) => {
 					// Handle error
@@ -86,7 +86,6 @@ function TicTacToe() {
 	const handleInputChange = (event) => {
 		setInputValue(event.target.value);
 		setUserName(event.target.value)
-		console.log()
 	};
 
 	const handleTileClick = (index) => {
