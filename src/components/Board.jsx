@@ -56,8 +56,8 @@ function Board({ tiles, onTileClick, playerTurn, strikeClass }) {
         playerTurn={playerTurn}
         onClick={() => onTileClick(8)}
         value={tiles[8]}
+        className="right-border"
       />
-      <Strike strikeClass={strikeClass} />
     </div>
   );
 }

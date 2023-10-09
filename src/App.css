@@ -6,8 +6,16 @@ body {
   color: white;
 }
 
-h1 {
+.text-center {
   text-align: center;
+}
+.op6 {
+  opacity: .6;
+}
+
+h1 {
+  font-weight: lighter;
+  margin: 50px 0;
 }
 
 .board {
@@ -16,6 +24,7 @@ h1 {
   grid-template-rows: 100px 100px 100px;
   cursor: pointer;
   position: relative;
+  padding: 50px 0;
 }
 
 .tile {
@@ -27,11 +36,11 @@ h1 {
 }
 
 .right-border {
-  border-right: 0.2em solid #0074a6;
+  border: solid .1px rgba(255, 255, 255, .1);
 }
 
 .bottom-border {
-  border-bottom: 0.2em solid #0074a6;
+  border: solid .1px rgba(255, 255, 255, .1);
 }
 
 .x-hover:hover::after {
@@ -111,3 +120,54 @@ h1 {
   width: 100%;
   font-size: 1.5em;
 }
+
+.user-board {
+  width: 305px;
+  height: 100vh;
+  float: left;
+  padding: 20px 40px;
+}
+.game-view {
+  width: 305px;
+  height: 100vh;
+  float: left;
+}
+.main-view {
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user {
+  width: 100%;
+}
+
+.nameInput {
+  width: calc(100% - 40px );
+  padding: 10px;
+  background: transparent;
+  outline: none;
+  padding: 20px;
+  border: solid .1px rgba(255, 255, 255, .1);
+  margin: 0 auto!important;
+}
+
+.border {
+  border: solid .1px rgba(255, 255, 255, .1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
