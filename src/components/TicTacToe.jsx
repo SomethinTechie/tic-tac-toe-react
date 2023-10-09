@@ -33,7 +33,7 @@ const winningCombinations = [
 	{ combo: [2, 4, 6] },
 ];
 
-function checkWinner(tiles, setStrikeClass, setGameState, userName) {
+function checkWinner(tiles, setStrikeClass, setGameState, setUserName, userName) {
 	for (const { combo, strikeClass } of winningCombinations) {
 		const tileValue1 = tiles[combo[0]];
 		const tileValue2 = tiles[combo[1]];
@@ -44,15 +44,14 @@ function checkWinner(tiles, setStrikeClass, setGameState, userName) {
 			tileValue1 === tileValue2 &&
 			tileValue1 === tileValue3
 		) {
-			setStrikeClass(strikeClass);
 			if (tileValue1 === PLAYER_X) {
 				setGameState(GameState.playerXWins);
 			} else {
 				setGameState(GameState.playerOWins);
+				setUserName("AI Foe")
 			}
 
 			const apiUrl = "http://localhost:8000/api/save-score";
-			console.log(userName)
 
 			axios
 				.post(apiUrl, { name: userName, score: "20" })
@@ -120,7 +119,7 @@ function TicTacToe() {
 
 	// Check a winner
 	useEffect(() => {
-		checkWinner(tiles, setStrikeClass, setGameState, userName);
+		checkWinner(tiles, setStrikeClass, setGameState, setUserName, userName);
 	}, [tiles]);
 
 	// Play sound on click
