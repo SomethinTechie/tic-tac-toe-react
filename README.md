@@ -1,20 +1,77 @@
-# Tic Tac Toe With React
+Tic-Tac-Toe Web App
+This is a simple Tic-Tac-Toe web application built with React.js for the frontend and Laravel for the API backend.
 
-<img src="cover.png" width="100%" >
+This web application allows users to play the game of Tic-Tac-Toe. The frontend is built using React.js, providing a dynamic and interactive user interface, while the backend is powered by Laravel, offering a RESTful API for game management.
 
-### YouTube Tutorial:
+Features
+Play Tic-Tac-Toe against another AI foe.
+Simple and intuitive user interface.
+API endpoints for managing game state.
+Installation
+Frontend (React.js)
+Clone the repository:
 
-https://youtu.be/4Gt_YyGf6B0?si=u8eITdczbHkTIY6e
+bash
+Copy code
+git clone https://github.com/your-username/tic-tac-toe-react
+Navigate to the frontend directory:
 
-### Try the game here:
+bash
+Copy code
+cd tic-tac-toe-react
+Install dependencies:
 
-https://codingwith-adam.github.io/tic-tac-toe-react/
+bash
+Copy code
+npm install
+Start the development server:
 
-In this Tutorial we are going to build an awesome version of Tic Tac Toe using React.
+bash
+Copy code
+npm start
+The app will be available at http://localhost:3000.
 
-Learn React concepts such as thinking in components, useState hook, useEffect hook, prop drilling. We also cover JS audio, CSS concepts such as flex-box and grid for display and more to create a delightful UI.
+Backend (Laravel)
+Clone the repository:
 
-The following component diagram is used to help us think in components.
-<img src='component-diagram.png'>
+bash
+Copy code
+git clone https://github.com/your-username/tic-tac-toe-laravel
+Navigate to the backend directory:
 
-If you enjoy this tutorial please subscribe, like and share on YouTube.
+bash
+Copy code
+cd tic-tac-toe-laravel
+Install dependencies:
+
+bash
+Copy code
+composer install
+Copy the .env.example file to .env and configure your database settings.
+
+Run migrations:
+
+bash
+Copy code
+php artisan migrate
+Start the Laravel development server:
+
+bash
+Copy code
+php artisan serve
+The API will be available at http://localhost:8000.
+
+Usage
+Open your web browser and navigate to http://localhost:3000.
+Play Tic-Tac-Toe against another player.
+View game history and results.
+Explore the API endpoints at http://localhost:8000/api.
+API Documentation
+API documentation can be found here.
+
+Folder Structure
+tic-tac-toe-react: Frontend React.js application.
+tic-tac-toe-laravel: Backend Laravel API.
+
+License
+This project is licensed under the MIT License.
