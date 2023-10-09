@@ -13,7 +13,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/tic-tac-toe-react
+git clone https://github.com/SomethinTechie/tic-tac-toe-react.git
 Navigate to the frontend directory:
 
 bash
@@ -36,7 +36,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/tic-tac-toe-laravel
+git clone https://github.com/SomethinTechie/tic-tac-toe-laravel.git
 Navigate to the backend directory:
 
 bash
@@ -63,7 +63,7 @@ The API will be available at http://localhost:8000.
 
 Usage
 Open your web browser and navigate to http://localhost:3000.
-Play Tic-Tac-Toe against another player.
+Play Tic-Tac-Toe against an AI foe.
 View game history and results.
 Explore the API endpoints at http://localhost:8000/api.
 API Documentation
